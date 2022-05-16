@@ -1,6 +1,6 @@
 ---
 title: "Two Scala Libraries Every Data Engineer Should Know"
-date: 2022-05-16T10:57:13-04:00
+date: 2022-05-15T10:57:13-04:00
 draft: false
 slug: "Two Scala Libraries Every Data Engineer Should Know"
 ---
