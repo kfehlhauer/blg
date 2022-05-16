@@ -1,0 +1,71 @@
+baseurl: https://kfehlhauer.github.io/blg/
+#baseurl: localhost
+title: Kurt Fehlhauer
+languageCode: en-us
+paginate: 10 # Number of posts per page
+# Default Theme
+theme: PaperMod
+
+enableInlineShortcodes: true
+pygmentsUseClasses: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    # - identifier: data_engineering
+    #   name: Data Engineering
+    #   url: /dataengineering/
+    #   weight: 10
+    # - identifier: fishing
+    #   name: Fishing
+    #   url: /fishing/
+    #   weight: 20
+    # - identifier: photography
+    #   name: Photography
+    #   url: /photography/
+    #   weight: 20
+    # - name: posts
+    #   url: posts/
+    #   weight: 30
+    # - name: Search
+    #   url: search/
+    #   weight: 20
+    
+
+params:
+    homeInfoParams:
+        enabled: true
+        # title: "Kurt Fehlhauer" 
+        # subtitle: "Data Engineering, Fishing, Photography, etc."
+        #imageUrl: "logo400.png"
+        #imageWidth: 400
+        #imageHeight: 400
+    socialIcons:
+        - name: github
+          url: "https://github.com/kfehlhauer"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/kurtfehlhauer/"
+        - name: twitter
+          url: "https://twitter.com/KurtFehlhauer"
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
