@@ -41,7 +41,7 @@
   {{ $resized := .Fill "300x300 q50" }}
   {{ $resizeFull := .Resize "1300x q50" }}
   {{- $imagetitle := index (split .Name ".") 0 -}}
-  <li reversed="reversed" start="35">
+  <li>
     <a href="{{ $resizeFull.Permalink }}" title="{{ $imagetitle }}" class="lightbox-image">
       <img src="{{ $resized.Permalink }}" alt="{{ $imagetitle }}" title="{{ $imagetitle }}">
     </a>
