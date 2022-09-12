@@ -1,6 +1,6 @@
 ---
 title: "Two Scala Libraries Every Data Engineer Should Know"
-date: 2022-05-15T10:57:13-04:00
+date: 2022-07-09T10:01:13-04:00
 draft: false
 slug: "Two Scala Libraries Every Data Engineer Should Know"
 ---
@@ -37,13 +37,13 @@ object Vehicle {
 }
 
 ```
-Now we decode the JSON with the `fromJson[type]` function.
+Then we can decode the JSON with the `fromJson[type]` function.
 ```[scala]
 def decodeJson(json: String) =
     ZIO.fromEither(json.fromJson[Vehicle])
 ```
 
-Next it is a matter of reading the JSON file and passing each JSON string to `decodeJson` function.
+In order to turn our JSON into Scala case classes it is a matter of passing each JSON string to `decodeJson` function.
 ```[scala]
 import zio.*
 import zio.json.*
@@ -68,7 +68,7 @@ object Main extends zio.ZIOAppDefault:
   def run = program
 ```
 
-The next step is to take our List of case classes and create a Parquet file from them. We need to do some Hadoop configuration, but you won't need to have the full Hadoop ecosystem installed for this example to work.
+The final step is to take our List of case classes and create a Parquet file from them. We need to do some Hadoop configuration, but you won't need to have the full Hadoop ecosystem installed for this example to work.
 ```[scala]
 import com.github.mjakubowski84.parquet4s.{ParquetWriter, Path}
 import org.apache.parquet.hadoop.metadata.CompressionCodecName
@@ -98,7 +98,7 @@ ParquetWriter
 ```
 At this point, we will have successfully transformed JSON to Parquet.  
 
-Next, we will read the `vehicle.parquet` file we just created.  We read the Parquet functionally and handle closing file resources gracefully. Then we display the contens in the vehicle case classes.
+We can verify our write step was successful by reading back the parquet file that was just created.  We read the Parquet functionally and handle closing file resources gracefully. Then we display the contents in the vehicle case classes.
 ```[scala]
 import com.github.mjakubowski84.parquet4s.ParquetReader
 
