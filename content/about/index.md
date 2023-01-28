@@ -1,6 +1,6 @@
 # Resume/CV    										                                                                                                               
 Kurt Fehlhauer     										                                                                                                               
-3890 Dunn Avenue, Odessa, FL 33556  phone: 720.483.4483 email: kfehlhauer@protonmail.com
+email: kfehlhauer@protonmail.com
 
 Summary
 --------
