@@ -1,6 +1,6 @@
 # Resume/CV    										                                                                                                               
 Kurt Fehlhauer     										                                                                                                               
-email: kfehlhauer@protonmail.com
+email: kfehlhauer@pm.me
 
 Summary
 --------
