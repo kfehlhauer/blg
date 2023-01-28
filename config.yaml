@@ -36,13 +36,18 @@ menu:
     
 
 params:
-    homeInfoParams:
-        enabled: true
-        # title: "Kurt Fehlhauer" 
-        # subtitle: "Data Engineering, Fishing, Photography, etc."
-        #imageUrl: "logo400.png"
-        #imageWidth: 400
-        #imageHeight: 400
+    # homeInfoParams:
+    #     Title: Kurt Fehlhauer
+    #     Content: Software Engineering, Photography, etc.
+    profileMode:
+      enabled: true
+      title: "Kurt Fehlhauer" 
+      subtitle: "Software Engineering, Photography, etc."
+      buttons:
+            - name: Photography
+              url: photography
+            - name: Posts
+              url: posts
     socialIcons:
         - name: github
           url: "https://github.com/kfehlhauer"
