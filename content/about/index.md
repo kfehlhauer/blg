@@ -4,7 +4,7 @@ email: kfehlhauer@pm.me
 
 Summary
 --------
-A software engineering leader with a track record of delivering systems in complex environments. 
+I am a software engineering leader with a track record of delivering systems in complex environments. 
 
 Experience
 --------------
