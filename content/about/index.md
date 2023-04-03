@@ -223,6 +223,3 @@ Education
 University of Wisconsin - Milwaukee  
 Bachelor of Business Administration (December 1994)  
 Major: Management Information Systems  
-Major GPA: 3.67  
-Overall GPA: 3.21  
-Dean’s List: Fall 1993, Spring 1994, and Fall 1994
