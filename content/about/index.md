@@ -11,15 +11,20 @@ Experience
 2/2022 - Present
 ### Chief Data Architect
 #### Stellantis: Remote from Odessa, FL
-As the leader of an international team at Stellantis, I oversee the development and implementation of world-class data products that contribute to the advancement of mobility in connected vehicles. This includes managing software and data engineering teams, as well as DevOps teams, to construct the necessary infrastructure to support data science, engineering, and marketplace activities.
+I started the data platform team at Stellantis. My team consists of data, DevOps, and software engineers.  I focus their efforts on supporting all vehicle telemetry data for Stellantis brands like Maserati and Ram trucks. In addition, I also work with our partners to deliver data products for customers within and external to Stellantis. 
 
 Additional responsibilities and accomplishments include:
+- Growing the data platform team from nothing.
+- Working with corporate governance to fund projects in the tens of millions of dollars.
 - Successfully forecasting and managing a data platform budget in the tens of millions of dollars.
-- Developing a robust data infrastructure for connected vehicle data.
-- Collaborating with data privacy officers to implement effective anonymization strategies for the protection of personally identifiable information (PII).
-- Facilitating big data design sessions to drive innovation and progress.
-- Advocating for functional design principles and developing numerous systems using Scala and the ZIO framework
+- Unlocked potential by simplifying data access through a complete rearchitecting of systems. 
+- Migration from legacy data platforms to one that is centered on Airflow, Kubernetes, and Spark.
+- Implementing an observability platform to monitor the data platform’s health and costs.
+- Collaborating with data privacy officers to implement effective anonymization strategies to protect personally identifiable information (PII).
+- Providing infrastructure to support machine learning to improve the vehicle cockpit experience.
+- Working with the c-suite executives to fund projects that reduce complexity and increase efficiencies. 
 - Providing mentorship and guidance to managers and leading engineers to foster professional growth and development.
+- Remaining active in development activities.
 _____
 
 
