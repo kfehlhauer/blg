@@ -14,7 +14,7 @@ Experience
 I started the data platform team at Stellantis. My team consists of data, DevOps, and software engineers.  I focus their efforts on supporting all vehicle telemetry data for Stellantis brands like Maserati and Ram trucks. In addition, I also work with our partners to deliver data products for customers within and external to Stellantis. 
 
 Additional responsibilities and accomplishments include:
-- Growing the data platform team from nothing.
+- Growing the data platform team from scratch.
 - Working with corporate governance to fund projects in the tens of millions of dollars.
 - Successfully forecasting and managing a data platform budget in the tens of millions of dollars.
 - Unlocked potential by simplifying data access through a complete rearchitecting of systems. 
@@ -25,6 +25,7 @@ Additional responsibilities and accomplishments include:
 - Working with the c-suite executives to fund projects that reduce complexity and increase efficiencies. 
 - Providing mentorship and guidance to managers and leading engineers to foster professional growth and development.
 - Remaining active in development activities.
+- Expanding capabilities of the team such as introducing the Rust language. 
 _____
 
 
