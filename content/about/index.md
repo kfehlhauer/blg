@@ -32,7 +32,7 @@ _____
 
 5/2019 – 2/2022	
 ### Senior Manager, ETL
-#### Activision Publishing: Remote from Tampa Bay, FL
+#### Activision Publishing: Remote
 As the Senior Manager of ETL at Activision Publishing, I spearheaded a diverse international team of data engineers. We developed data products and extended support to data scientists and analytics analysts across the company, and I also collaborated with data scientists to execute feature engineering.
 
 Key Contributions and Responsibilities:
@@ -55,7 +55,7 @@ _____
 
 6/2014 – 4/2019
 ### Lead Database Architect
-#### Activision Publishing: Boulder, CO
+#### Activision Publishing: Boulder, CO/Remote
 In my role as Lead Data Engineer at Activision's Central Data Products organization, I championed significant advancements in our analytics, model-building capabilities, and game design support. I introduced the use of Apache Airflow and Spark company-wide, significantly impacting our data management and analytical capabilities.
 
 Key Contributions and Responsibilities:
