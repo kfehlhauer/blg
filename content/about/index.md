@@ -10,222 +10,222 @@ Experience
 --------------
 2/2022 - Present
 ### Chief Data Architect
-#### Stellantis: Remote from Odessa, FL
-I started the data platform team at Stellantis. My team consists of data, DevOps, and software engineers.  I focus their efforts on supporting all vehicle telemetry data for Stellantis brands like Maserati and Ram trucks. In addition, I also work with our partners to deliver data products for customers within and external to Stellantis. 
+#### Stellantis: Remote
+As the Chief Data Architect at Stellantis, I spearheaded the creation and currently manage the data platform team, encompassing data, DevOps, and software engineers. My key focus lies in overseeing all vehicle telemetry data for distinguished Stellantis brands, including Maserati and Ram trucks while collaborating with partners to deliver robust data products at an enterprise scale.
 
-Additional responsibilities and accomplishments include:
-- Growing the data platform team from scratch.
-- Working with corporate governance to fund projects in the tens of millions of dollars.
-- Successfully forecasting and managing a data platform budget in the tens of millions of dollars.
-- Unlocked potential by simplifying data access through a complete rearchitecting of systems. 
-- Migration from legacy data platforms to one that is centered on Airflow, Kubernetes, and Spark.
-- Implementing an observability platform to monitor the data platform’s health and costs.
-- Collaborating with data privacy officers to implement effective anonymization strategies to protect personally identifiable information (PII).
-- Providing infrastructure to support machine learning to improve the vehicle cockpit experience.
-- Working with the c-suite executives to fund projects that reduce complexity and increase efficiencies. 
-- Providing mentorship and guidance to managers and leading engineers to foster professional growth and development.
-- Remaining active in development activities.
-- Expanding capabilities of the team such as introducing the Rust language. 
+Key Accomplishments and Responsibilities:
+- Set the strategic roadmap and vision for enterprise-scale data engineering utilizing Databricks Spark and Delta Lake
+- Orchestrated the consolidation of legacy data systems from two distinct car companies: FCA LLC and PSA Group
+- Constructed a multi-petabyte data platform leveraging Airflow, Kubernetes, and Spark
+- Pioneered the introduction of Spark streaming to process billions of daily records
+- Forecasted and managed a multimillion-dollar data platform budget
+- Successfully migrated data from various on-premise data sources to the cloud
+- Regularly report on status and progress directly to C-suite leadership
+- Champion IT innovation to enhance data accessibility and utility through thoughtful design and technology choices
+- Partnered with data privacy officers to implement effective anonymization strategies, protecting personally identifiable information (PII)
+- Established infrastructure supporting machine learning to enrich the vehicle cockpit experience
+- Continuously exploring technologies like Rust to improve system performance, lower costs, and environmental impact
+- Cultivated a robust engineering culture committed to continuous learning and skill expansion
+- Collaborated with partners to foster innovations in engineering and marketing
 _____
 
 
 5/2019 – 2/2022	
 ### Senior Manager, ETL
 #### Activision Publishing: Remote from Tampa Bay, FL
-I served as Senior Manager of ETL at Activision Publishing, leading a diverse international team of data engineers. My team provided data products and support to data science partners and analytics analysts throughout the company. I also collaborated with data scientists to design and implement feature engineering.  
+As the Senior Manager of ETL at Activision Publishing, I spearheaded a diverse international team of data engineers. We developed data products and extended support to data scientists and analytics analysts across the company, and I also collaborated with data scientists to execute feature engineering.
 
-Additional responsibilities and accomplishments include:
-- Managing all silver/gold level data for the Call of Duty franchise
-- Leading the successful migration of ETL processes from Amazon Web Services (AWS) to Google Cloud Platform (GCP)
-- Developing a Spark-based ETL framework that enabled self-service ETL for many instances, which was implemented by the Call of Duty mainline, Call of Duty Mobile, and the EMEA sales team
-- Migrating a legacy ETL system to normalize Call of Duty data from various titles, resulting in a 50% reduction in data availability time
-- Adopting Astronomer Airflow from Apache Airflow and conducting the evaluation and adoption of Databricks, which improved data product delivery times
-- Migrating off of Qubole/Hive/Presto to Databricks and migrating legacy systems from Redshift to the Databricks Delta Lake to improve scalability
-- Driving the adoption of MLFlow for data science workflows within the Activision Data Science community
-- Extending Spark functionality through user-defined functions, integrating third-party data with Activision’s game data to drive profitability
-- Creating the reference architecture for third-party data ingestion using Cats/ZIO, Circe, and http4s on Kubernetes.
-- Leading the implementation of GDPR, CCPA, and other privacy measures within the data lake
-- Collaborating with Activision game studios on transforming game artifact data into formats queriable in SparkSQL and retooling small data tools from game studios to work within the Activision big data frameworks
-- Improving Diversity, Equity, and Inclusion efforts by expanding the hiring pipeline of potential candidates, and mentoring employees in Airflow, Kubernetes, Scala, and Spark
-- Managing multi-million dollar contracts on data products and leading the team that is the primary authority on using Spark at Activision on using Python, Scala, and SparkSQL
+Key Contributions and Responsibilities:
+- Managed comprehensive silver/gold level data for the Call of Duty franchise
+- Led a successful migration of ETL processes from Amazon Web Services (AWS) to Google Cloud Platform (GCP), enhancing platform compatibility
+- Developed a Spark-based ETL framework that empowered self-service ETL for many use cases
+- Migrated and normalized a legacy ETL system to streamline various Call of Duty title data, achieving a 50% reduction in data availability wait time
+- Introduced Astronomer Airflow to ease the deployment of Airflow across various data teams at Activision
+- Consolidated and simplified Activision's big data platforms from Qubole/Hive/Presto and Redshift to Databricks
+- Promoted the adoption of MLFlow for data science workflows within the Activision Data Science community
+- Enhanced Spark functionality through user-defined functions and integrated third-party data with Activision's game data for improved insights
+- Developed a third-party data ingestion framework using Cats/ZIO, Circe, and http4s on Kubernetes
+- Implemented GDPR, CCPA, and other privacy measures within the data lake to ensure compliance with data protection regulations
+- Partnered with Activision game studios to convert game artifact data into formats queryable in SparkSQL, retooling small data tools to function within Activision's big data frameworks
+- Improved Diversity, Equity, and Inclusion (DEI) efforts by widening the hiring pipeline for potential candidates
+- Mentored staff in Airflow, Kubernetes, Scala, and Spark, enhancing team capabilities
+- Managed multimillion-dollar contracts, ensuring efficient utilization of resources and delivery of various data products
 _____
 
 
 6/2014 – 4/2019
 ### Lead Database Architect
 #### Activision Publishing: Boulder, CO
-As a lead data engineer within Activision's Central Data Products organization, I played a key role performing analytic research and model building and supporting game designers. Through my efforts, I led the widespread adoption of Apache Airflow and Spark within the company.
+In my role as Lead Data Engineer at Activision's Central Data Products organization, I championed significant advancements in our analytics, model-building capabilities, and game design support. I introduced the use of Apache Airflow and Spark company-wide, significantly impacting our data management and analytical capabilities.
 
-Additional responsibilities and accomplishments include:
-- Providing analytics to optimize vehicles and weapons in Call of Duty: Black Ops IV
-- Collaborating with data scientists to build various models to improve gameplay performance
-- Improving the performance of the Play of The Match (PTOM) simulation by 20%
-- Introducing the use of Apache Spark at Activision and training data scientists in its use
-- Creating Spark extensions in Scala for dealing with encoded data
-- Interviewing and recommending data engineers and data scientists
-- Designing and implementing a Cassandra cluster for storing Personal Identifying Information (PII) for Activision's GDPR initiative
-- Developing a GDPR PII data store using a streaming Akka composed of Scala, Kafka, and Cassandra
-- Leading the adoption of Airflow within Activision
-- Migrating Airflow from DCOS to Kubernetes
-- Managing multiple Hive, Presto, and Spark clusters within Qubole
-- Establishing best practices for using big data technology such as Presto and Apache Spark
-- Designing and implementing a data pipeline service to capture prelaunch and beta data for Call of Duty titles
+Key Contributions and Responsibilities:
+- Collaborating with game developers to optimize gameplay elements such as vehicles and weapons in Call of Duty: Black Ops IV through data-driven analytics
+- Collaborated with data scientists to construct models that enhanced gameplay performance
+- Boosted the Play of The Match (PTOM) simulation's performance by 20%
+- Pioneered the introduction and training of Apache Spark at Activision, enabling more efficient data analysis
+- Developed Spark extensions in Scala to handle encoded data
+- Managed the hiring process for data engineers and data scientists, contributing to a highly skilled team
+- Spearheaded the company-wide adoption of Airflow and its migration from DCOS to Kubernetes
+- Oversaw multiple Hive, Presto, and Spark clusters within Qubole
+- Formulated best practices for utilizing big data technologies such as Presto and Apache Spark
+- Established a data pipeline service for capturing prelaunch and beta data for Call of Duty titles
+- Designed ETL processes using Python Pandas dataframes for data ingestion for the Chinese version of Call of Duty
+- Worked closely with Tencent to meet the data needs for Call of Duty Online
+- Implemented a Vertica columnar database to support data from Call of Duty Online
 _____
 
 
 1/2013 – 6/2014
 ### Senior Consultant
 #### FICO: Remote
-As a team lead, I was responsible for enhancing credit and retail applications for the largest bank in the U.S. and implementing recommendation systems for major pharmaceutical companies using Python, Vertica, and Pentaho.
+In my role as a team lead, I enhanced credit and retail applications for diverse financial institutions and implemented recommendation systems for major pharmaceutical companies, utilizing Python, Vertica, and Pentaho.
 
-Additional responsibilities and accomplishments include:
-- Leading the team that saved FICO's relationship with the nation's largest bank
-- Successfully implementing a credit card fraud application that had been delayed by over a year by another team
-- Architecting and implementing ETL processes using Pentaho Data Integration
-- Converting Kia's application for determining the best dealer and best service dealer for KIA's customers from VB.Net and PostgreSQL to Java and Vertica
-- Mentoring developers on other ETL techniques utilizing Python
-- Interviewing and recommending staff for hiring.
+Key Contributions and Responsibilities:
+- Led a team that preserved FICO's relationship with the nation's largest bank, significantly contributing to client retention
+- Successfully implemented a credit card fraud application, overcoming a year-long delay by another team and demonstrating problem-solving skills and technical proficiency
+- Designed and implemented ETL processes using Pentaho Data Integration, improving data flow and quality
+- Transitioned Kia's application for identifying the optimal dealer and service dealer from VB.Net and PostgreSQL to Java and Vertica, enhancing system performance and reliability
+- Mentored developers in employing Python for diverse ETL techniques, fostering a culture of continuous learning and development
+- Participated in the hiring process, recommending staff for recruitment to strengthen the team
 _____
 
 
 10/2011 – 12/2012
 ### Senior ETL Architect
 #### Productive Data Solutions: Denver, CO
-As an ETL consultant, I was responsible for providing guidance and implementing ETL systems for clients. 
+In my role as an ETL consultant, I led the design and implementation of effective ETL systems for clients, providing strategic guidance and expert knowledge.
 
-Additional responsibilities and accomplishments include:
-- Designing and implementing ETL processes using a combination of Pentaho Data Integration and Python
-- Developing a data mapping solution using Django, JQuery, and Oracle for migrating to databases where the source and target schemas are different
-- Recommending and implementing a client's Pentaho repository to a file-based system utilizing subversion, resulting in a significant reduction of deployment time from over an hour to 30 seconds
-- Mentoring developers on other ETL techniques utilizing Python
-- Implementing a HIPPA reporting system using Python
-- Mentoring QA staff on automation through Linux shell scripting
-- Improving sprint velocity by 50% by leading an effort to enhance user stories for ETL sprints by working with business analysts and clients
-- Being responsible for interviewing SQL developers
-
+Key Contributions and Responsibilities:
+- Designed and implemented ETL processes utilizing a blend of Pentaho Data Integration and Python, improving data workflow and integration
+- Developed a unique data mapping solution using Django, JQuery, and Oracle, enabling a smooth migration to databases with different source and target schemas
+- Recommended and facilitated the transition of a client's Pentaho repository to a file-based system via subversion, dramatically reducing deployment time from over an hour to a mere 30 seconds
+- Educated developers on diverse ETL techniques utilizing Python, contributing to team skill development
+- Implemented a HIPPA-compliant reporting system using Python, enhancing data security and privacy
+- Mentored QA staff on automation strategies through Linux shell scripting, promoting a culture of continuous learning and innovation
+- Enhanced sprint velocity by 50% by leading an initiative to refine user stories for ETL sprints in collaboration with business analysts and clients
+- Participated in the hiring process, conducting interviews for SQL developers
 _____
 
 3/2006 – 10/2011
 ### Software Architect
 #### Transzap: Denver, CO
-As a Software Engineer, I was responsible for improving the performance of software products for customers and internal data systems. 
+As a Software Architect, I was instrumental in enhancing the performance of both customer-facing software products and internal data systems.
 
-Additional responsibilities and accomplishments include:
-- Introducing Python as a way to perform data transformations and automate various tasks quickly
-- Developing multiple Python applications to verify the integrity of our system conversions and upgrades
-- Migrating Transzap's legacy e-payables system running on Orion to the latest generation system on Tomcat
-- Introducing columnar database technology (Vertica) to offload reporting load from the transactional database
-- Converting SSAS cubes to Vertica greatly simplifying access to the data using SQL instead of MDX
-- Creating Java web services to perform analytical queries against Vertica and returning the results as XMLA
-- Implementing several ETL systems with Pentaho Data Integration
-- Designing and implementing systems that contributed to Transzap being recognized by the Deloitte Fast 500
-- Developing SQL Server Integration Services to migrate data into a data warehouse
-- Reducing the start-up time of Spendwork's C# application from minutes to seconds
+Key Contributions and Responsibilities:
+- Pioneered the introduction of Python for efficient data transformations and task automation
+- Developed multiple Python applications to ensure system conversion and upgrade integrity
+- Led the migration of Transzap's legacy e-payables system from Orion to Tomcat
+- Introduced columnar database technology (Vertica) to offload reporting load from the transactional database, optimizing performance
+- Converted SSAS cubes to Vertica, simplifying data access via SQL instead of MDX
+- Crafted Java web services for performing analytical queries against Vertica, returning results as XMLA
+- Implemented several ETL systems using Pentaho Data Integration, enhancing data management processes
+- Contributed to system design and implementation that led to Transzap's recognition in the Deloitte Fast 500
+- Developed SQL Server Integration Services to streamline data migration into a data warehouse
+- Reduced the start-up time of Tranzap’s Spendwork's C# application from minutes to seconds, significantly improving user experience
 _____
 
 
 7/2000 – 3/2006
 ### Application Architect
 #### Calpine: Fort Collins, CO
-As a senior applications architect, I was responsible for establishing standards and best practices for data warehousing, XML, web services, and service-oriented architecture (SOA) at Calpine. I also designed and implemented systems that allowed Calpine's personnel to monitor the performance and efficiency of their power plant fleet. 
+As a Senior Applications Architect at Calpine, I established standards and best practices for data warehousing, XML, web services, and service-oriented architecture (SOA). I designed and implemented systems to facilitate performance and efficiency monitoring of Calpine's power plant fleet.
 
-Additional responsibilities and accomplishments include:
-- Directly contributing to Calpine's 5th place ranking in the InformationWeek top 100 innovators (InformationWeek Sept. 19, 2005 issue)
-- Providing architectural oversight to numerous development projects
-- Interviewing and recommending potential candidates for software development positions
-- Budgeting projects and setting initial project management timelines, with projects ranging in size and scope up to $600K
-- Leading reviews on all database designs for new systems or enhancements to current systems
-- Evaluating business intelligence tools and gaining buy-in from all information services organizations within Calpine
-- Developing a data warehousing and OLAP application using ASP.Net, SQL Server, SSAS for comparing meter data for natural gas and electric power sales
-- Designing and implementing an OLAP cube for power plant fleet reliability analysis
-- Developing and implementing a data warehouse to automate reporting from a Maximo inventory system using SQL Server, C#, and DTS
-- Designing, developing, and testing back-end components for real-time telemetry gathering from power plants located throughout the country
-- Creating a data mapping tool using C#, ADO.NET, Oracle, and OSI PI to gather information from various systems
-- Designing and developing the database that maintained power plant meta-data for the Calpine fleet
-- Modifying C++/MFC based libraries to handle different contract periods for power plants
-- Designing, developing, and creating an OLAP server from scratch that cached different periods such as gas days, peaking periods, and off-peak periods
-- Playing a key role in Calpine's early adoption of Microsoft's .Net technologies by working directly with Microsoft on the C# language.
+Key Contributions and Responsibilities:
+- Provided architectural oversight to numerous development projects, ensuring optimal technical solutions
+- Played a key role in Calpine's early adoption of Microsoft's .Net technologies, collaborating directly with Microsoft on the C# language
+- Directly contributed to Calpine's 5th place ranking in the InformationWeek Top 100 Innovators (InformationWeek, Sept. 19, 2005 issue)
+- Budgeted projects and set initial project management timelines for projects up to $600K, demonstrating financial acumen
+- Conducted comprehensive reviews of database designs for new systems or enhancements to existing systems
+- Evaluated business intelligence tools, gaining consensus from all information services organizations within Calpine
+- Developed a data warehousing and OLAP application using ASP.Net, SQL Server, SSAS for comparing meter data for natural gas and electric power sales
+- Designed and implemented an OLAP cube for power plant fleet reliability analysis
+- Created a data warehouse to automate reporting from a Maximo inventory system using SQL Server, C#, and DTS
+- Designed, developed, and tested back-end components for real-time nationwide telemetry gathering from power plants
+- Created a data mapping tool using C#, ADO.NET, Oracle, and OSI PI
+- Designed and developed the database maintaining power plant meta-data for the Calpine fleet
+- Modified C++/MFC-based libraries to accommodate varying contract periods for power plants
+- Designed, developed, and created an OLAP server from scratch that cached different periods such as gas days, peaking periods, and off-peak periods
+- Participated in the hiring process, interviewing and recommending software development candidates
 _____
 
 
 12/1999 – 7/2000
 ### Systems Analyst II
 #### City of Thornton: Thornton, CO
-As a systems analyst, I was responsible for instructing MIS staff in advanced programming languages and technologies, such as C++, COM, MTS, and ASP. Additionally, I was responsible for the implementation, maintenance, and upgrade of mission-critical systems for the City of Thornton.
+In my role as a Systems Analyst, I guided MIS staff in the utilization of advanced programming languages and technologies, including C++, COM, MTS, and ASP. My responsibilities also encompassed implementing, maintaining, and upgrading mission-critical systems for the City of Thornton.
 
-Additional responsibilities and accomplishments include:
-- Interviewing and recommending potential candidates for software development positions
-- Advising on software purchases and the implementation of a development life cycle for internal projects
-- Providing technical support and maintenance for various systems used by the City of Thornton
-- Continuously improving system performance, reliability, and security through regular upgrades and updates
+Key Contributions and Responsibilities:
+- Participated in the hiring process, conducting interviews and recommending software development candidates
+- Provided expert advice on software purchases and implemented a development life cycle for internal projects, supporting effective project management
+- Provided technical support and maintenance for various systems utilized by the City of Thornton, ensuring seamless operations
+- Continually improved system performance, reliability, and security through regular system upgrades and updates, enhancing organizational efficiency
 _____
 
 
 1/1999 – 12/1999
 ### Information Technology Lead
 #### VantagePoint Network: Fort Collins, CO
-As a software developer, I played a key role in creating one of the first web-based agricultural platforms to assist crop professionals in increasing crop yields while reducing costs and environmental impact. 
+As an Information Technology Lead, I was a key contributor to the creation of one of the first web-based agricultural platforms, aiding crop professionals in increasing crop yields while reducing costs and environmental impact.
 
-Additional responsibilities and accomplishments include:
-- Designing and building a system for collecting GPS-based yield card information from combing technologies such as C++, ATL COM, ADO, MTS, MSMQ, Oracle, and SDE
-- Designing and building a system for storing soil test information, utilizing C++ ATL COM objects with ADO, MTS, Oracle, and SDE
-- Implementing a COM object for migrating spatial data in an ESRI SDE Oracle database using C++, ATL COM, and the SDE API
-- Building an NT Service with a COM interface for encrypting user id and password information using C++, ATL, and Visual Basic
-- Implementing COM business objects written in C++ using ATL, ADO, MTS, and Oracle • Being instrumental in designing and building a web-based crop record management system using ASP, ADO, and Oracle
-- Building installation programs for deployment between development, test, and production systems using Wise, VBScript, and MTS package exports. 
-- Assisting the QA department in creating guidelines for reporting bugs, testing, and correcting bugs
-- Collaborating with database designers on the design of the crop database system
-- Organizing and participating in code review sessions
+Key Contributions and Responsibilities:
+- Designed and built an innovative system for collecting GPS-based yield card information, leveraging technologies such as C++, ATL COM, ADO, MTS, MSMQ, Oracle, and SDE
+- Created a system for storing soil test information, demonstrating expertise in utilizing C++ ATL COM objects with ADO, MTS, Oracle, and SDE
+- Implemented a COM object to migrate spatial data in an ESRI SDE Oracle database using C++, ATL COM, and the SDE API, enhancing data management efficiency
+- Built an NT Service with a COM interface to encrypt user id and password information, enhancing system security
+- Designed and implemented a web-based crop record management system using ASP, ADO, and Oracle, improving record-keeping efficiency
+- Streamlined the deployment process between development, test, and production systems by creating installation programs with Wise, VBScript, and MTS package exports
+- Assisted the QA department in developing guidelines for bug reporting, testing, and correction, improving software quality
+- Collaborated with database designers to create a well-structured crop database system
+- Organized and participated in code review sessions, ensuring high-quality, efficient code
 _____
 
 
 2/1995 – 1/1999
 ### Programmer/Analyst
 #### State Farm Insurance Companies: Bloomington, IL
-As a programmer/analyst, I was responsible for designing and implementing mission-critical business systems for various insurance products. 
+As a Programmer/Analyst, I played a critical role in designing and implementing mission-critical business systems for various insurance products.
 
-Additional responsibilities and accomplishments include:
-- Designing and building COM objects to integrate third-party insurance software packages with State Farm's legacy systems
-- Designing an intranet-based application for online policy rating using technologies such as COM, COM TI, DB2, DHTML, and MTS
-- Maintaining coding standards for my area and acting as a mentor and resource for analysts in C/C++ and MFC
-- Teaching and mentoring C++ to employees during after-hours sessions
-- Designing and building a system to replicate marketing data for up to 5000 locations using C++, DB2, and MQ Series 
-- Debugging a third-party MFC C++ application for performing life insurance illustrations at the vendor's site
-- Enhancing an expert system written in AionDS for pricing auto policies
-- Tuning and debugging COBOL applications
-- Working with business analysts to discover business rules for expert systems
-- Maintaining PL/1 applications that gathered information from various IMS databases as input to different expert systems.
+Key Contributions and Responsibilities:
+- Designed and built COM objects, integrating third-party insurance software packages with State Farm's legacy systems, enhancing compatibility and efficiency
+- Created an intranet-based application for online policy rating, leveraging technologies such as COM, COM TI, DB2, DHTML, and MTS, improving user experience and policy management
+- Established coding standards for my area, serving as a mentor and resource for analysts in C/C++ and MFC, contributing to improved code quality and team expertise
+- Educated and mentored employees in C++ during after-hours sessions, enhancing team skills and knowledge
+- Developed a system to replicate marketing data for up to 5000 locations using C++, DB2, and MQ Series, enabling efficient data management and access
+- Debugged a third-party MFC C++ application for life insurance illustrations at the vendor's site, ensuring accurate and reliable system performance
+- Enhanced an expert system written in AionDS for pricing auto policies, improving pricing accuracy and policy management
+- Performed tuning and debugging of COBOL applications, ensuring optimal performance and reliability.
+- Collaborated with business analysts to uncover business rules for expert systems, enhancing system functionality and relevance 
 _____
 
 
 1/1996 - 12/1996
 ### C++ Instructor
 #### Heartland Community College: Bloomington, IL
-As an instructor of C++ programming, I was responsible for teaching the fundamentals of the language and object-oriented programming to students. 
+In my role as a C++ Instructor, I leveraged my expertise in C++ programming to educate students on the language's fundamentals and the principles of object-oriented programming.
 
-Key concepts covered included:
-- Analysis and design principles
-- Class and object creation
-- Exception handling techniques
-- Inheritance and polymorphism
-- Overloaded operators and their applications
-- Best practices in C++ programming
+My comprehensive curriculum focused on the following:
+- Understanding and applying analysis and design principles
+- Mastering the creation of classes and objects
+- Implementing effective exception-handling techniques
+- Exploring the concepts of inheritance and polymorphism
+- Applying overloaded operators and understanding their applications
+- Adhering to best practices in C++ programming
 _____
 
 
 5/1993 – 1/1995
 ### Computer Operator
 #### Rockwell Automation Allen – Bradley: Mequon, WI
-Assisted systems analysts and system programmers with mainframe, network, and PC operations and maintenance.
+In my role as a Computer Operator, I played an integral part in maintaining and operating mainframe, network, and PC systems. I collaborated closely with systems analysts and system programmers to ensure the smooth running of operations.
 
-Additional responsibilities and accomplishments include:
-- Contributed to the successful completion of several ISO 9000 audits by maintaining documentation for procedures related to mainframe operations
-- Demonstrated proficiency in writing JCL and REXX scripts to run programs and backups
-- Monitored and reported on telecommunication usage and availability
-- Was a key player in the implementation of automated scheduling for mainframe applications to improve efficiency and reliability
+Key Contributions and Responsibilities:
+- Actively supporting several successful ISO 9000 audits by diligently maintaining documentation for procedures related to mainframe operations
+- Demonstrating advanced skills in writing JCL and REXX scripts, which were utilized to run programs and conduct backups efficiently
+- Regularly monitoring and providing reports on telecommunication usage and availability to optimize system performance
+- Playing a critical role in the successful implementation of automated scheduling for mainframe applications, contributing significantly to increased efficiency and reliability
 			
 Education
 -----------
 University of Wisconsin - Milwaukee  
-Bachelor of Business Administration (December 1994)  
+Bachelor of Business Administration (Completed in December 1994)  
 Major: Management Information Systems  
