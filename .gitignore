@@ -20,3 +20,7 @@ resources/
 
 # Backup Files
 .DS_Store
+
+# Editor Files
+.metals
+.vscode
