@@ -4,17 +4,18 @@ email: kfehlhauer@pm.me
 
 Summary
 --------
-I am a software engineering leader with a track record of delivering systems in complex environments. 
+A hands-on engineering leader with a proven track record of creating teams that transform visions into systems.  
 
 Experience
 --------------
 2/2022 - Present
 ### Chief Data Architect
 #### Stellantis: Remote
-As the Chief Data Architect at Stellantis, I spearheaded the creation and currently manage the data platform team, encompassing data, DevOps, and software engineers. My key focus lies in overseeing all vehicle telemetry data for distinguished Stellantis brands, including Maserati and Ram trucks while collaborating with partners to deliver robust data products at an enterprise scale.
+Spearheaded the creation and currently manages the data platform team, encompassing data, DevOps, and software engineers. Key focus includes overseeing all vehicle telemetry data for distinguished Stellantis brands, such as Maserati and Ram trucks, and collaborating with partners to deliver robust data products at an enterprise scale.
 
 Key Accomplishments and Responsibilities:
 - Set the strategic roadmap and vision for enterprise-scale data engineering utilizing Databricks Spark and Delta Lake
+- Created a 20-plus data engineering and DevOps organization
 - Orchestrated the consolidation of legacy data systems from two distinct car companies: FCA LLC and PSA Group
 - Constructed a multi-petabyte data platform leveraging Airflow, Kubernetes, and Spark
 - Pioneered the introduction of Spark streaming to process billions of daily records
@@ -33,7 +34,7 @@ _____
 5/2019 – 2/2022	
 ### Senior Manager, ETL
 #### Activision Publishing: Remote
-As the Senior Manager of ETL at Activision Publishing, I spearheaded a diverse international team of data engineers. We developed data products and extended support to data scientists and analytics analysts across the company, and I also collaborated with data scientists to execute feature engineering.
+Led an international team of data engineers. Developed data products, extended support to data scientists and analytics analysts across the company, and collaborated with data scientists to execute feature engineering.
 
 Key Contributions and Responsibilities:
 - Managed comprehensive silver/gold level data for the Call of Duty franchise
@@ -56,7 +57,7 @@ _____
 6/2014 – 4/2019
 ### Lead Database Architect
 #### Activision Publishing: Boulder, CO/Remote
-In my role as Lead Data Engineer at Activision's Central Data Products organization, I championed significant advancements in our analytics, model-building capabilities, and game design support. I introduced the use of Apache Airflow and Spark company-wide, significantly impacting our data management and analytical capabilities.
+Championed significant advancements in Activision's analytics, model-building capabilities, and game design support. Innovated by introducing the use of Apache Airflow and Spark company-wide, significantly impacting the organization's data management and analytical capabilities.
 
 Key Contributions and Responsibilities:
 - Collaborating with game developers to optimize gameplay elements such as vehicles and weapons in Call of Duty: Black Ops IV through data-driven analytics
@@ -78,7 +79,7 @@ _____
 1/2013 – 6/2014
 ### Senior Consultant
 #### FICO: Remote
-In my role as a team lead, I enhanced credit and retail applications for diverse financial institutions and implemented recommendation systems for major pharmaceutical companies, utilizing Python, Vertica, and Pentaho.
+Enhanced credit and retail applications for diverse financial institutions and implemented recommendation systems for major pharmaceutical companies, utilizing Python, Vertica, and Pentaho.
 
 Key Contributions and Responsibilities:
 - Led a team that preserved FICO's relationship with the nation's largest bank, significantly contributing to client retention
@@ -93,7 +94,7 @@ _____
 10/2011 – 12/2012
 ### Senior ETL Architect
 #### Productive Data Solutions: Denver, CO
-In my role as an ETL consultant, I led the design and implementation of effective ETL systems for clients, providing strategic guidance and expert knowledge.
+Led the design and implementation of effective ETL systems for clients, providing strategic guidance and expert knowledge.
 
 Key Contributions and Responsibilities:
 - Designed and implemented ETL processes utilizing a blend of Pentaho Data Integration and Python, improving data workflow and integration
@@ -109,7 +110,7 @@ _____
 3/2006 – 10/2011
 ### Software Architect
 #### Transzap: Denver, CO
-As a Software Architect, I was instrumental in enhancing the performance of both customer-facing software products and internal data systems.
+Instrumental in enhancing the performance of both customer-facing software products and internal data systems.
 
 Key Contributions and Responsibilities:
 - Pioneered the introduction of Python for efficient data transformations and task automation
@@ -128,7 +129,7 @@ _____
 7/2000 – 3/2006
 ### Application Architect
 #### Calpine: Fort Collins, CO
-As a Senior Applications Architect at Calpine, I established standards and best practices for data warehousing, XML, web services, and service-oriented architecture (SOA). I designed and implemented systems to facilitate performance and efficiency monitoring of Calpine's power plant fleet.
+Established standards and best practices for data warehousing, XML, web services, and service-oriented architecture (SOA). Also, built systems to facilitate the performance and efficiency monitoring of Calpine's power plant fleet.
 
 Key Contributions and Responsibilities:
 - Provided architectural oversight to numerous development projects, ensuring optimal technical solutions
@@ -152,7 +153,7 @@ _____
 12/1999 – 7/2000
 ### Systems Analyst II
 #### City of Thornton: Thornton, CO
-In my role as a Systems Analyst, I guided MIS staff in the utilization of advanced programming languages and technologies, including C++, COM, MTS, and ASP. My responsibilities also encompassed implementing, maintaining, and upgrading mission-critical systems for the City of Thornton.
+Guided MIS staff utilizing advanced programming languages and technologies, including C++, COM, MTS, and ASP. Also, implemented, maintained, and upgraded mission-critical systems for the City of Thornton.
 
 Key Contributions and Responsibilities:
 - Participated in the hiring process, conducting interviews and recommending software development candidates
@@ -165,7 +166,7 @@ _____
 1/1999 – 12/1999
 ### Information Technology Lead
 #### VantagePoint Network: Fort Collins, CO
-As an Information Technology Lead, I was a key contributor to the creation of one of the first web-based agricultural platforms, aiding crop professionals in increasing crop yields while reducing costs and environmental impact.
+Was a key contributor to creating one of the first web-based agricultural platforms, aiding crop professionals in increasing crop yields while reducing costs and environmental impact.
 
 Key Contributions and Responsibilities:
 - Designed and built an innovative system for collecting GPS-based yield card information, leveraging technologies such as C++, ATL COM, ADO, MTS, MSMQ, Oracle, and SDE
@@ -183,7 +184,7 @@ _____
 2/1995 – 1/1999
 ### Programmer/Analyst
 #### State Farm Insurance Companies: Bloomington, IL
-As a Programmer/Analyst, I played a critical role in designing and implementing mission-critical business systems for various insurance products.
+Played a critical role in designing and implementing mission-critical business systems for various insurance products.
 
 Key Contributions and Responsibilities:
 - Designed and built COM objects, integrating third-party insurance software packages with State Farm's legacy systems, enhancing compatibility and efficiency
@@ -201,9 +202,9 @@ _____
 1/1996 - 12/1996
 ### C++ Instructor
 #### Heartland Community College: Bloomington, IL
-In my role as a C++ Instructor, I leveraged my expertise in C++ programming to educate students on the language's fundamentals and the principles of object-oriented programming.
+Leveraged expertise in C++ programming to educate students on the language's fundamentals and the principles of object-oriented programming.
 
-My comprehensive curriculum focused on the following:
+The comprehensive curriculum focused on the following:
 - Understanding and applying analysis and design principles
 - Mastering the creation of classes and objects
 - Implementing effective exception-handling techniques
@@ -216,13 +217,14 @@ _____
 5/1993 – 1/1995
 ### Computer Operator
 #### Rockwell Automation Allen – Bradley: Mequon, WI
-In my role as a Computer Operator, I played an integral part in maintaining and operating mainframe, network, and PC systems. I collaborated closely with systems analysts and system programmers to ensure the smooth running of operations.
+Played integral in maintaining and operating mainframe, network, and PC systems. Also, collaborated closely with systems analysts and system programmers to ensure the smooth running of operations.
 
 Key Contributions and Responsibilities:
-- Actively supporting several successful ISO 9000 audits by diligently maintaining documentation for procedures related to mainframe operations
-- Demonstrating advanced skills in writing JCL and REXX scripts, which were utilized to run programs and conduct backups efficiently
-- Regularly monitoring and providing reports on telecommunication usage and availability to optimize system performance
-- Playing a critical role in the successful implementation of automated scheduling for mainframe applications, contributing significantly to increased efficiency and reliability
+- Supported several successful ISO 9000 audits by diligently maintaining documentation for procedures related to mainframe operations
+- Demonstrated advanced skills in writing JCL and REXX scripts, which were utilized to run programs and conduct backups efficiently
+- Regularly monitored and provided reports on telecommunication usage and availability to optimize system performance
+- Played a critical role in the successful implementation of automated scheduling for mainframe applications, contributing significantly to increased efficiency and reliability
+
 			
 Education
 -----------

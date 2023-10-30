@@ -51,7 +51,7 @@ struct Vechicle {
     isRegistered: Option<bool>,
 }
 ```
-Using the attributes Serialize and Deserialize invoke compile time macros that create the boilerplate code to serialize and deserialize between structs and JSON. Rust uses particular casings that the compiler enforces through warnings. The `VIN` and the `isRegistered` fields are not in snake case, the attribute `allow(non_snake_case)` is used to suppress the warning.
+Using the attributes Serialize and Deserialize invoke compile time macros that create the boilerplate code to serialize and deserialize between structs and JSON. Rust uses particular casings that the compiler enforces through warnings. The `VIN` and the `isRegistered` fields are not in the snake case, the attribute `allow(non_snake_case)` is used to suppress the warning.
 
 Next, we read a file called `vehicles.json` containing the above JSON. Deserializing the JSON into Rust structs straight forward.
 ```[rust]
