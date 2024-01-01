@@ -11,23 +11,22 @@ Experience
 2/2022 - Present
 ### Chief Data Architect
 #### Stellantis: Remote
-Spearheaded the creation and currently manages the data platform team, encompassing data, DevOps, and software engineers. Key focus includes overseeing all vehicle telemetry data for distinguished Stellantis brands, such as Maserati and Ram trucks, and collaborating with partners to deliver robust data products at an enterprise scale.
+Responsible for all the data architecture decisions within Stellantis’s Global Analytics and Data Products organization.
 
 Key Accomplishments and Responsibilities:
-- Set the strategic roadmap and vision for enterprise-scale data engineering utilizing Databricks Spark and Delta Lake
-- Created a 20-plus data engineering and DevOps organization
-- Orchestrated the consolidation of legacy data systems from two distinct car companies: FCA LLC and PSA Group
-- Constructed a multi-petabyte data platform leveraging Airflow, Kubernetes, and Spark
-- Pioneered the introduction of Spark streaming to process billions of daily records
-- Forecasted and managed a multimillion-dollar data platform budget
-- Successfully migrated data from various on-premise data sources to the cloud
-- Regularly report on status and progress directly to C-suite leadership
-- Champion IT innovation to enhance data accessibility and utility through thoughtful design and technology choices
-- Partnered with data privacy officers to implement effective anonymization strategies, protecting personally identifiable information (PII)
-- Established infrastructure supporting machine learning to enrich the vehicle cockpit experience
-- Continuously exploring technologies like Rust to improve system performance, lower costs, and environmental impact
-- Cultivated a robust engineering culture committed to continuous learning and skill expansion
-- Collaborated with partners to foster innovations in engineering and marketing
+- Created a 20-plus data engineering and DevOps organization across multiple continents.
+- Forecasted and managed a multimillion-dollar data platform budget.
+- Set the strategic roadmap and vision for enterprise-scale data engineering utilizing Databricks Spark, Kubernetes, and Delta Lake to construct a multi-petabyte data platform.
+- Directly enabled hundreds of Stellantis employees to work with data at scale.
+- Architected systems for the data collection from research and production vehicles at the petabyte scale.
+- Collaborating with AI teams to deliver large language models (LLM) into production.
+- Set the direction for properly handling personal identifying information (PII) within my department.
+- Reduced complexity and bureaucracy to enable the prompt delivery of systems.
+- Managed consolidating multiple data systems from two car companies: FCA LLC and PSA Group.
+- Expanded the data engineering toolset with GitHub Copilot and DBT.
+- Introducing Rust-based query engines using Data Fusion and delta-rs.
+- Exploring portable architectures that enable Stellantis to operate where cloud vendors are unavailable.
+- Cultivated a robust engineering culture committed to continuous learning and skill expansion.
 _____
 
 
@@ -36,7 +35,7 @@ _____
 #### Activision Publishing: Remote
 Led an international team of data engineers. Developed data products, extended support to data scientists and analytics analysts across the company, and collaborated with data scientists to execute feature engineering.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Managed comprehensive silver/gold level data for the Call of Duty franchise
 - Led a successful migration of ETL processes from Amazon Web Services (AWS) to Google Cloud Platform (GCP), enhancing platform compatibility
 - Developed a Spark-based ETL framework that empowered self-service ETL for many use cases
@@ -57,9 +56,9 @@ _____
 6/2014 – 4/2019
 ### Lead Database Architect
 #### Activision Publishing: Boulder, CO/Remote
-Championed significant advancements in Activision's analytics, model-building capabilities, and game design support. Innovated by introducing the use of Apache Airflow and Spark company-wide, significantly impacting the organization's data management and analytical capabilities.
+Championed significant advancements in Activision's analytics, model-building capabilities, and game design support. Innovated by introducing Apache Airflow and Spark company-wide, significantly impacting the organization's data management and analytical capabilities.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Collaborating with game developers to optimize gameplay elements such as vehicles and weapons in Call of Duty: Black Ops IV through data-driven analytics
 - Collaborated with data scientists to construct models that enhanced gameplay performance
 - Boosted the Play of The Match (PTOM) simulation's performance by 20%
@@ -81,7 +80,7 @@ _____
 #### FICO: Remote
 Enhanced credit and retail applications for diverse financial institutions and implemented recommendation systems for major pharmaceutical companies, utilizing Python, Vertica, and Pentaho.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Led a team that preserved FICO's relationship with the nation's largest bank, significantly contributing to client retention
 - Successfully implemented a credit card fraud application, overcoming a year-long delay by another team and demonstrating problem-solving skills and technical proficiency
 - Designed and implemented ETL processes using Pentaho Data Integration, improving data flow and quality
@@ -96,7 +95,7 @@ _____
 #### Productive Data Solutions: Denver, CO
 Led the design and implementation of effective ETL systems for clients, providing strategic guidance and expert knowledge.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Designed and implemented ETL processes utilizing a blend of Pentaho Data Integration and Python, improving data workflow and integration
 - Developed a unique data mapping solution using Django, JQuery, and Oracle, enabling a smooth migration to databases with different source and target schemas
 - Recommended and facilitated the transition of a client's Pentaho repository to a file-based system via subversion, dramatically reducing deployment time from over an hour to a mere 30 seconds
@@ -110,9 +109,9 @@ _____
 3/2006 – 10/2011
 ### Software Architect
 #### Transzap: Denver, CO
-Instrumental in enhancing the performance of both customer-facing software products and internal data systems.
+Enhanced Transzap's oil and gas accounting software in addition to building analytical data systems.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Pioneered the introduction of Python for efficient data transformations and task automation
 - Developed multiple Python applications to ensure system conversion and upgrade integrity
 - Led the migration of Transzap's legacy e-payables system from Orion to Tomcat
@@ -131,7 +130,7 @@ _____
 #### Calpine: Fort Collins, CO
 Established standards and best practices for data warehousing, XML, web services, and service-oriented architecture (SOA). Also, built systems to facilitate the performance and efficiency monitoring of Calpine's power plant fleet.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Provided architectural oversight to numerous development projects, ensuring optimal technical solutions
 - Played a key role in Calpine's early adoption of Microsoft's .Net technologies, collaborating directly with Microsoft on the C# language
 - Directly contributed to Calpine's 5th place ranking in the InformationWeek Top 100 Innovators (InformationWeek, Sept. 19, 2005 issue)
@@ -155,7 +154,7 @@ _____
 #### City of Thornton: Thornton, CO
 Guided MIS staff utilizing advanced programming languages and technologies, including C++, COM, MTS, and ASP. Also, implemented, maintained, and upgraded mission-critical systems for the City of Thornton.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Participated in the hiring process, conducting interviews and recommending software development candidates
 - Provided expert advice on software purchases and implemented a development life cycle for internal projects, supporting effective project management
 - Provided technical support and maintenance for various systems utilized by the City of Thornton, ensuring seamless operations
@@ -168,7 +167,7 @@ _____
 #### VantagePoint Network: Fort Collins, CO
 Was a key contributor to creating one of the first web-based agricultural platforms, aiding crop professionals in increasing crop yields while reducing costs and environmental impact.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Designed and built an innovative system for collecting GPS-based yield card information, leveraging technologies such as C++, ATL COM, ADO, MTS, MSMQ, Oracle, and SDE
 - Created a system for storing soil test information, demonstrating expertise in utilizing C++ ATL COM objects with ADO, MTS, Oracle, and SDE
 - Implemented a COM object to migrate spatial data in an ESRI SDE Oracle database using C++, ATL COM, and the SDE API, enhancing data management efficiency
@@ -186,7 +185,7 @@ _____
 #### State Farm Insurance Companies: Bloomington, IL
 Played a critical role in designing and implementing mission-critical business systems for various insurance products.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Designed and built COM objects, integrating third-party insurance software packages with State Farm's legacy systems, enhancing compatibility and efficiency
 - Created an intranet-based application for online policy rating, leveraging technologies such as COM, COM TI, DB2, DHTML, and MTS, improving user experience and policy management
 - Established coding standards for my area, serving as a mentor and resource for analysts in C/C++ and MFC, contributing to improved code quality and team expertise
@@ -219,7 +218,7 @@ _____
 #### Rockwell Automation Allen – Bradley: Mequon, WI
 Played integral in maintaining and operating mainframe, network, and PC systems. Also, collaborated closely with systems analysts and system programmers to ensure the smooth running of operations.
 
-Key Contributions and Responsibilities:
+Key Accomplishments and Responsiblilities:
 - Supported several successful ISO 9000 audits by diligently maintaining documentation for procedures related to mainframe operations
 - Demonstrated advanced skills in writing JCL and REXX scripts, which were utilized to run programs and conduct backups efficiently
 - Regularly monitored and provided reports on telecommunication usage and availability to optimize system performance
