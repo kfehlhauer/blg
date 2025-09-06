@@ -2,7 +2,8 @@ baseurl: https://kurtfehlhauer.com/
 #baseurl: localhost
 title: Kurt Fehlhauer
 languageCode: en-us
-paginate: 10 # Number of posts per page
+pagination:
+  pageSize: 10 # Number of posts per page
 # Default Theme
 theme: PaperMod
 
