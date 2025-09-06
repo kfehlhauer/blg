@@ -10,9 +10,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4  # Updated version
         with:
           fetch-depth: 0
+          submodules: recursive  # This is the key addition
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
