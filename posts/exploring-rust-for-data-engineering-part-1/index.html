@@ -1,0 +1,186 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Exploring Rust For Data Engineering Part 1 | Kurt Fehlhauer</title>
+<meta name=keywords content><meta name=description content="Rust is gaining increasing recognition as the most loved language in the Stack Overflow developer surveys. As such, it&rsquo;s natural to wonder about its potential within the realm of data engineering. Will data engineers begin to love Rust too, or is it just hype? Love versus adoption are two different things as shown by The RedMonk Programming Language Rankings: January 2023. Over the coming weeks and months, I aim to explore and share my insights into the possible trajectories for Rust within this domain."><meta name=author content><link rel=canonical href=https://kurtfehlhauer.com/posts/exploring-rust-for-data-engineering-part-1/><link crossorigin=anonymous href=/assets/css/stylesheet.bccfefac377bc340f06c260aed1bddf49a4354816d7c570d6aac75a997986c95.css integrity="sha256-vM/vrDd7w0DwbCYK7Rvd9JpDVIFtfFcNaqx1qZeYbJU=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script><link rel=icon href=https://kurtfehlhauer.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://kurtfehlhauer.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://kurtfehlhauer.com/favicon-32x32.png><link rel=apple-touch-icon href=https://kurtfehlhauer.com/apple-touch-icon.png><link rel=mask-icon href=https://kurtfehlhauer.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://kurtfehlhauer.com/posts/exploring-rust-for-data-engineering-part-1/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:title" content="Exploring Rust For Data Engineering Part 1"><meta property="og:description" content="Rust is gaining increasing recognition as the most loved language in the Stack Overflow developer surveys. As such, it&rsquo;s natural to wonder about its potential within the realm of data engineering. Will data engineers begin to love Rust too, or is it just hype? Love versus adoption are two different things as shown by The RedMonk Programming Language Rankings: January 2023. Over the coming weeks and months, I aim to explore and share my insights into the possible trajectories for Rust within this domain."><meta property="og:type" content="article"><meta property="og:url" content="https://kurtfehlhauer.com/posts/exploring-rust-for-data-engineering-part-1/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-06-20T08:46:35-04:00"><meta property="article:modified_time" content="2023-06-20T08:46:35-04:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Exploring Rust For Data Engineering Part 1"><meta name=twitter:description content="Rust is gaining increasing recognition as the most loved language in the Stack Overflow developer surveys. As such, it&rsquo;s natural to wonder about its potential within the realm of data engineering. Will data engineers begin to love Rust too, or is it just hype? Love versus adoption are two different things as shown by The RedMonk Programming Language Rankings: January 2023. Over the coming weeks and months, I aim to explore and share my insights into the possible trajectories for Rust within this domain."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://kurtfehlhauer.com/posts/"},{"@type":"ListItem","position":2,"name":"Exploring Rust For Data Engineering Part 1","item":"https://kurtfehlhauer.com/posts/exploring-rust-for-data-engineering-part-1/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Exploring Rust For Data Engineering Part 1","name":"Exploring Rust For Data Engineering Part 1","description":"Rust is gaining increasing recognition as the most loved language in the Stack Overflow developer surveys. As such, it\u0026rsquo;s natural to wonder about its potential within the realm of data engineering. Will data engineers begin to love Rust too, or is it just hype? Love versus adoption are two different things as shown by The RedMonk Programming Language Rankings: January 2023. Over the coming weeks and months, I aim to explore and share my insights into the possible trajectories for Rust within this domain.","keywords":[],"articleBody":"Rust is gaining increasing recognition as the most loved language in the Stack Overflow developer surveys. As such, it’s natural to wonder about its potential within the realm of data engineering. Will data engineers begin to love Rust too, or is it just hype? Love versus adoption are two different things as shown by The RedMonk Programming Language Rankings: January 2023. Over the coming weeks and months, I aim to explore and share my insights into the possible trajectories for Rust within this domain.\nThough Rust is undeniably elegant, it diverges from other languages in one significant respect – memory management. Unlike C/C++ or Java/Python Rust does not rely on manual memory allocation or garbage collection. It employs a unique concept called ‘memory ownership’, which may initially seem bewildering to engineers more familiar with garbage-collected languages like C#, Java, Python, and Scala, where manual memory management is a foreign concept. Those coming from C/C++ may have an easier journey using Rust because they have a headstart with pointers and references. Becoming comfortable with Rust’s approach to memory management is an integral part of the learning curve. While many will find the continuous barking of errors by the Rust compiler to be annoying, those error messages will correct many subtle bugs that other languages just ignore. My advice to those keen on exploring Rust is to persevere through these challenges. Embracing Rust will refine your programming skills. Your perseverance will be rewarded with applications that have no buffer overflows, safe concurrency, and predictable latency.\nThus far, JVM languages like Java and Scala have ruled the big data engineering space, underpinning frameworks like Apache Flink and Spark. The JVM dominance in big data systems is a legacy of infrastructure laid down by Java in the Hadoop and MapReduce era. The JDK big data ecosystem is mature and battle-hardened and may have reached its pinnacle. However, as data sizes skyrocket, the downsides of JVM, such as significant memory consumption and garbage collection pauses, become increasingly evident, especially at scale. These issues trigger multi-level repercussions, leading to increased cloud costs, latency, failure rates, and other problems that data engineers grapple with daily. Rust can help you solve those issues.\nThe foundation for Rust’s entry into the data engineering world is already in place. There are available libraries for dealing with Arrow, Parquet, and JSON parsing, high-performing caching libraries like Mocha, and the under-development Polars dataframe library that’s written in Rust but can be utilized in Python. Asynchronous runtimes like Tokio and Rayon enable multi-core CPU usage.\nFurthermore, the introduction of Delta Lake RS provides a pathway to incorporate Rust into existing Deltalakes. Powered by the Apache Arrow platform, Delta Lake RS opens opportunities to transfer some workloads away from Spark, although much work is still needed for broader adoption.\nLet’s get started by transforming JSON to parquet, a common use case. The JDK has strong support for that use case with even stronger support in Scala. See the previous post Two Scala Libraries Every Data Engineer Should Know. Rust has a framework called Serde which can serialize and deserialize various data formats to and from Rust structs. Serde will handle the conversion between JSON and structs but not Parquet. For that, we will need to use the Parquet and Arrow crates.\nGiven this JSON:\n{\"VIN\": \"1A123\", \"make\": \"foo\", \"model\": \"bar\", \"year\": 2002, \"owner\": \"John Doe\", \"isRegistered\": true} {\"VIN\": \"1C123\", \"make\": \"foo\", \"model\": \"barV2\", \"year\": 2022, \"owner\": \"John Doe Jr.\", \"isRegistered\": false} {\"VIN\": \"1C123\", \"make\": \"foo\", \"model\": \"barV2\", \"year\": 2022, \"owner\": \"John Doe Jr.\"} I want the data stored in the Parquet file that I’m creating to have the following schema:\nmessage arrow_schema { REQUIRED BYTE_ARRAY VIN (STRING); REQUIRED BYTE_ARRAY make (STRING); REQUIRED BYTE_ARRAY model (STRING); REQUIRED INT32 year (INTEGER(16,false)); REQUIRED BYTE_ARRAY owner (STRING); OPTIONAL BOOLEAN isRegistered; } First, we start by creating a Rust struct that we can deserialize the JSON into.\nuse serde::{Deserialize, Serialize}; #[derive(Serialize, Deserialize, Debug)] #[allow(non_snake_case)] struct Vechicle { VIN: String, make: String, model: String, year: u16, owner: String, isRegistered: Option, } Using the attributes Serialize and Deserialize invoke compile time macros that create the boilerplate code to serialize and deserialize between structs and JSON. Rust uses particular casings that the compiler enforces through warnings. The VIN and the isRegistered fields are not in the snake case, the attribute allow(non_snake_case) is used to suppress the warning.\nNext, we read a file called vehicles.json containing the above JSON. Deserializing the JSON into Rust structs straight forward.\nlet v: Vechicle = serde_json::from_str(\u0026js)?; Reading in the entire file:\nlet mut vehicles: Vec = Vec::new(); if let Ok(lines) = read_lines(\"vehicles.json\") { for line in lines { if let Ok(js) = line { let v: Vechicle = serde_json::from_str(\u0026js)?; vehicles.push(v); } } } Writing to a Parquet file in Rust currently involves some boilerplate code that is accomplished in three steps. Much of this boilerplate could be abstracted away using Rust macros. Macros are beyond the scope of this post.\nCreate arrays for each column. use arrow::array::{ArrayRef, StringArray}; let vins = StringArray::from( vehicles .iter() .map(|v| v.VIN.clone()) .collect::","wordCount":"1273","inLanguage":"en","datePublished":"2023-06-20T08:46:35-04:00","dateModified":"2023-06-20T08:46:35-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kurtfehlhauer.com/posts/exploring-rust-for-data-engineering-part-1/"},"publisher":{"@type":"Organization","name":"Kurt Fehlhauer","logo":{"@type":"ImageObject","url":"https://kurtfehlhauer.com/favicon.ico"}}}</script></head><body class=dark id=top><header class=header><nav class=nav><div class=logo><a href=https://kurtfehlhauer.com/ accesskey=h title="Kurt Fehlhauer (Alt + H)">Kurt Fehlhauer</a><div class=logo-switches><ul class=lang-switch><li>|</li></ul></div></div><ul id=menu><li><a href=https://kurtfehlhauer.com/photography/ title=Photography><span>Photography</span></a></li><li><a href=https://kurtfehlhauer.com/posts/ title=posts><span>posts</span></a></li><li><a href=https://kurtfehlhauer.com/about/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://kurtfehlhauer.com/>Home</a>&nbsp;»&nbsp;<a href=https://kurtfehlhauer.com/posts/>Posts</a></div><h1 class=post-title>Exploring Rust For Data Engineering Part 1</h1><div class=post-meta>&lt;span title='2023-06-20 08:46:35 -0400 -0400'>June 20, 2023&lt;/span></div></header><div class=post-content><p>Rust is gaining increasing recognition as the most loved language in the <a href=https://survey.stackoverflow.co/2022#technology-most-loved-dreaded-and-wanted>Stack Overflow developer surveys</a>. As such, it&rsquo;s natural to wonder about its potential within the realm of data engineering. Will data engineers begin to love Rust too, or is it just hype? Love versus adoption are two different things as shown by <a href=https://redmonk.com/sogrady/2023/05/16/language-rankings-1-23/>The RedMonk Programming Language Rankings: January 2023</a>. Over the coming weeks and months, I aim to explore and share my insights into the possible trajectories for Rust within this domain.</p><p>Though Rust is undeniably elegant, it diverges from other languages in one significant respect – memory management. Unlike C/C++ or Java/Python Rust does not rely on manual memory allocation or garbage collection. It employs a unique concept called &lsquo;memory ownership&rsquo;, which may initially seem bewildering to engineers more familiar with garbage-collected languages like C#, Java, Python, and Scala, where manual memory management is a foreign concept. Those coming from C/C++ may have an easier journey using Rust because they have a headstart with pointers and references. Becoming comfortable with Rust&rsquo;s approach to memory management is an integral part of the learning curve. While many will find the continuous barking of errors by the Rust compiler to be annoying, those error messages will correct many subtle bugs that other languages just ignore. My advice to those keen on exploring Rust is to persevere through these challenges. Embracing Rust will refine your programming skills. Your perseverance will be rewarded with applications that have no buffer overflows, safe concurrency, and predictable latency.</p><p>Thus far, JVM languages like Java and Scala have ruled the big data engineering space, underpinning frameworks like Apache Flink and Spark. The JVM dominance in big data systems is a legacy of infrastructure laid down by Java in the Hadoop and MapReduce era. The JDK big data ecosystem is mature and battle-hardened and may have reached its pinnacle. However, as data sizes skyrocket, the downsides of JVM, such as significant memory consumption and garbage collection pauses, become increasingly evident, especially at scale. These issues trigger multi-level repercussions, leading to increased cloud costs, latency, failure rates, and other problems that data engineers grapple with daily. Rust can help you solve those issues.</p><p>The foundation for Rust&rsquo;s entry into the data engineering world is already in place. There are available libraries for dealing with Arrow, Parquet, and JSON parsing, high-performing caching libraries like <a href=https://github.com/moka-rs/moka>Mocha</a>, and the under-development <a href=https://www.pola.rs/>Polars</a> dataframe library that&rsquo;s written in Rust but can be utilized in Python. Asynchronous runtimes like <a href=https://tokio.rs>Tokio</a> and <a href=https://github.com/rayon-rs>Rayon</a> enable multi-core CPU usage.</p><p>Furthermore, the introduction of <a href=https://github.com/delta-io/delta-rs>Delta Lake RS</a> provides a pathway to incorporate Rust into existing Deltalakes. Powered by the <a href=https://arrow.apache.org/>Apache Arrow</a> platform, Delta Lake RS opens opportunities to transfer some workloads away from Spark, although much work is still needed for broader adoption.</p><p>Let&rsquo;s get started by transforming JSON to parquet, a common use case. The JDK has strong support for that use case with even stronger support in Scala. See the previous post <a href=../two-scala-libraries-every-data-engineer-should-know/>Two Scala Libraries Every Data Engineer Should Know</a>. Rust has a framework called <a href=https://docs.rs/serde/latest/serde/>Serde</a> which can serialize and deserialize various data formats to and from Rust structs. Serde will handle the conversion between JSON and structs but not Parquet. For that, we will need to use the <a href=https://docs.rs/parquet/41.0.0/parquet/>Parquet</a> and <a href=https://docs.rs/arrow/41.0.0/arrow/>Arrow</a> crates.</p><p>Given this JSON:</p><pre tabindex=0><code class=language-[json] data-lang=[json]>{&#34;VIN&#34;: &#34;1A123&#34;, &#34;make&#34;: &#34;foo&#34;, &#34;model&#34;: &#34;bar&#34;, &#34;year&#34;: 2002, &#34;owner&#34;: &#34;John Doe&#34;, &#34;isRegistered&#34;: true} 
+{&#34;VIN&#34;: &#34;1C123&#34;, &#34;make&#34;: &#34;foo&#34;, &#34;model&#34;: &#34;barV2&#34;, &#34;year&#34;: 2022, &#34;owner&#34;: &#34;John Doe Jr.&#34;, &#34;isRegistered&#34;: false}
+{&#34;VIN&#34;: &#34;1C123&#34;, &#34;make&#34;: &#34;foo&#34;, &#34;model&#34;: &#34;barV2&#34;, &#34;year&#34;: 2022, &#34;owner&#34;: &#34;John Doe Jr.&#34;}
+</code></pre><p>I want the data stored in the Parquet file that I&rsquo;m creating to have the following schema:</p><pre tabindex=0><code>message arrow_schema {
+  REQUIRED BYTE_ARRAY VIN (STRING);
+  REQUIRED BYTE_ARRAY make (STRING);
+  REQUIRED BYTE_ARRAY model (STRING);
+  REQUIRED INT32 year (INTEGER(16,false));
+  REQUIRED BYTE_ARRAY owner (STRING);
+  OPTIONAL BOOLEAN isRegistered;
+}
+</code></pre><p>First, we start by creating a Rust struct that we can deserialize the JSON into.</p><pre tabindex=0><code class=language-[rust] data-lang=[rust]>use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize, Debug)]
+#[allow(non_snake_case)]
+struct Vechicle {
+    VIN: String,
+    make: String,
+    model: String,
+    year: u16,
+    owner: String,
+    isRegistered: Option&lt;bool&gt;,
+}
+</code></pre><p>Using the attributes Serialize and Deserialize invoke compile time macros that create the boilerplate code to serialize and deserialize between structs and JSON. Rust uses particular casings that the compiler enforces through warnings. The <code>VIN</code> and the <code>isRegistered</code> fields are not in the snake case, the attribute <code>allow(non_snake_case)</code> is used to suppress the warning.</p><p>Next, we read a file called <code>vehicles.json</code> containing the above JSON. Deserializing the JSON into Rust structs straight forward.</p><pre tabindex=0><code class=language-[rust] data-lang=[rust]>let v: Vechicle = serde_json::from_str(&amp;js)?;
+</code></pre><p>Reading in the entire file:</p><pre tabindex=0><code class=language-[rust] data-lang=[rust]>let mut vehicles: Vec&lt;Vechicle&gt; = Vec::new();
+if let Ok(lines) = read_lines(&#34;vehicles.json&#34;) {
+    for line in lines {
+        if let Ok(js) = line {
+            let v: Vechicle = serde_json::from_str(&amp;js)?;
+            vehicles.push(v);
+        }
+    }
+}
+</code></pre><p>Writing to a Parquet file in Rust currently involves some boilerplate code that is accomplished in three steps. Much of this boilerplate could be abstracted away using Rust macros. Macros are beyond the scope of this post.</p><ol><li>Create arrays for each column.</li></ol><pre tabindex=0><code class=language-[rust] data-lang=[rust]>use arrow::array::{ArrayRef, StringArray};
+
+let vins = StringArray::from(
+        vehicles
+            .iter()
+            .map(|v| v.VIN.clone())
+            .collect::&lt;Vec&lt;String&gt;&gt;(),
+    );
+</code></pre><ol start=2><li>Create a RecordBatch to hold the column arrays. Notice the use of the <code>Arc</code>( ‘Arc’ stands for ‘Atomically Reference Counted’) type. It is a thread-safe reference-counting pointer. Those new to Rust will eventually want to obtain a cursory understanding of how threading works in Rust. For now, it&rsquo;s just an implementation detail.</li></ol><pre tabindex=0><code class=language-[rust] data-lang=[rust]>use arrow::record_batch::RecordBatch;
+
+let batch = RecordBatch::try_from_iter(vec![
+        (&#34;VIN&#34;, Arc::new(vins) as ArrayRef),
+        ...
+    ])
+    .unwrap();
+</code></pre><ol start=3><li>Use the <code>ArrowWriter</code> to write the record batch to a file. The compression is also set in this step.</li></ol><pre tabindex=0><code class=language-[rust] data-lang=[rust]>use parquet::arrow::arrow_writer::ArrowWriter;
+use parquet::basic::Compression;
+
+let file = File::create(&#34;vehicles.parquet&#34;).unwrap();
+let props = WriterProperties::builder()
+    .set_compression(Compression::SNAPPY)
+    .build();
+
+let mut writer = ArrowWriter::try_new(file, batch.schema(), Some(props)).unwrap();
+    writer.write(&amp;batch).expect(&#34;Unable to write batch&#34;);
+    writer.close().unwrap();
+</code></pre><p>The complete write function.</p><pre tabindex=0><code class=language-[rust] data-lang=[rust]>use arrow::array::{ArrayRef, BooleanArray, StringArray, UInt16Array};
+use parquet::basic::Compression;
+use parquet::file::properties::WriterProperties;
+use std::sync::Arc;
+
+fn write(vehicles: Vec&lt;Vechicle&gt;) -&gt; Result&lt;()&gt; {
+    let vins = StringArray::from(
+        vehicles
+            .iter()
+            .map(|v| v.VIN.clone())
+            .collect::&lt;Vec&lt;String&gt;&gt;(),
+    );
+
+    let makes = StringArray::from(
+        vehicles
+            .iter()
+            .map(|v| v.make.clone())
+            .collect::&lt;Vec&lt;String&gt;&gt;(),
+    );
+
+    let models = StringArray::from(
+        vehicles
+            .iter()
+            .map(|v| v.model.clone())
+            .collect::&lt;Vec&lt;String&gt;&gt;(),
+    );
+
+    let years = UInt16Array::from(vehicles.iter().map(|v| v.year).collect::&lt;Vec&lt;u16&gt;&gt;());
+
+    let owners = StringArray::from(
+        vehicles
+            .iter()
+            .map(|v| v.owner.clone())
+            .collect::&lt;Vec&lt;String&gt;&gt;(),
+    );
+
+    let registrations =
+        BooleanArray::from(vehicles.iter().map(|v| v.isRegistered).collect::&lt;Vec&lt;_&gt;&gt;());
+
+    let batch = RecordBatch::try_from_iter(vec![
+        (&#34;VIN&#34;, Arc::new(vins) as ArrayRef),
+        (&#34;make&#34;, Arc::new(makes) as ArrayRef),
+        (&#34;model&#34;, Arc::new(models) as ArrayRef),
+        (&#34;year&#34;, Arc::new(years) as ArrayRef),
+        (&#34;owner&#34;, Arc::new(owners) as ArrayRef),
+        (&#34;isRegistered&#34;, Arc::new(registrations) as ArrayRef),
+    ])
+    .unwrap();
+
+    let file = File::create(&#34;vehicles.parquet&#34;).unwrap();
+    let props = WriterProperties::builder()
+        .set_compression(Compression::SNAPPY)
+        .build();
+
+    let mut writer = ArrowWriter::try_new(file, batch.schema(), Some(props)).unwrap();
+    writer.write(&amp;batch).expect(&#34;Unable to write batch&#34;);
+    writer.close().unwrap();
+
+    Ok(())
+}
+</code></pre><p>Reading a Parquet file is much the same but in reverse.</p><pre tabindex=0><code class=language-[rust] data-lang=[rust]>use arrow::array::{ArrayRef, BooleanArray, StringArray, UInt16Array};
+use arrow::record_batch::RecordBatch;
+use parquet::arrow::arrow_reader::ParquetRecordBatchReaderBuilder;
+
+#[allow(non_snake_case)]
+fn read() -&gt; Result&lt;()&gt; {
+    let file = File::open(&#34;vehicles.parquet&#34;).unwrap();
+    let arrow_reader = ParquetRecordBatchReaderBuilder::try_new(file).unwrap();
+    let record_batch_reader = arrow_reader.build().unwrap();
+
+    let mut vehicles: Vec&lt;Vechicle&gt; = vec![];
+
+    for maybe_batch in record_batch_reader {
+        let record_batch = maybe_batch.unwrap();
+        let VIN = record_batch
+            .column(0)
+            .as_any()
+            .downcast_ref::&lt;StringArray&gt;()
+            .unwrap();
+        let make = record_batch
+            .column(1)
+            .as_any()
+            .downcast_ref::&lt;StringArray&gt;()
+            .unwrap();
+        let model = record_batch
+            .column(2)
+            .as_any()
+            .downcast_ref::&lt;StringArray&gt;()
+            .unwrap();
+        let year = record_batch
+            .column(3)
+            .as_any()
+            .downcast_ref::&lt;UInt16Array&gt;()
+            .unwrap();
+        let owner = record_batch
+            .column(4)
+            .as_any()
+            .downcast_ref::&lt;StringArray&gt;()
+            .unwrap();
+        let isRegistered = record_batch
+            .column(5)
+            .as_any()
+            .downcast_ref::&lt;BooleanArray&gt;();
+
+        for i in 0..record_batch.num_rows() {
+            vehicles.push(Vechicle {
+                VIN: VIN.value(i).to_string(),
+                make: make.value(i).to_string(),
+                model: model.value(i).to_string(),
+                year: year.value(i),
+                owner: owner.value(i).to_string(),
+                isRegistered: isRegistered.map(|a| a.value(i)),
+            });
+        }
+    }
+</code></pre><p>In conclusion, transforming data from JSON to Parquet is a straightforward process requiring only a few Rust crates. As the Rust ecosystem is further developed I expect data engineering tasks to become more commonplace. In my subsequent posts, I&rsquo;ll delve into the nitty-gritty of using other libraries for various data engineering tasks. Stay tuned for more insights into the exciting possibilities that Rust brings to the table.</p><p>The full source code is available <a href=https://github.com/kfehlhauer/json_to_parquet>here</a>.</p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://kurtfehlhauer.com/posts/rusts-rocket/><span class=title>« Prev</span><br><span>Rust's Rocket</span>
+</a><a class=next href=https://kurtfehlhauer.com/posts/two-scala-libraries-every-data-engineer-should-know/><span class=title>Next »</span><br><span>Two Scala Libraries Every Data Engineer Should Know</span></a></nav><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share Exploring Rust For Data Engineering Part 1 on twitter" href="https://twitter.com/intent/tweet/?text=Exploring%20Rust%20For%20Data%20Engineering%20Part%201&amp;url=https%3a%2f%2fkurtfehlhauer.com%2fposts%2fexploring-rust-for-data-engineering-part-1%2f&amp;hashtags="><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Exploring Rust For Data Engineering Part 1 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkurtfehlhauer.com%2fposts%2fexploring-rust-for-data-engineering-part-1%2f&amp;title=Exploring%20Rust%20For%20Data%20Engineering%20Part%201&amp;summary=Exploring%20Rust%20For%20Data%20Engineering%20Part%201&amp;source=https%3a%2f%2fkurtfehlhauer.com%2fposts%2fexploring-rust-for-data-engineering-part-1%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Exploring Rust For Data Engineering Part 1 on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fkurtfehlhauer.com%2fposts%2fexploring-rust-for-data-engineering-part-1%2f&title=Exploring%20Rust%20For%20Data%20Engineering%20Part%201"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Exploring Rust For Data Engineering Part 1 on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fkurtfehlhauer.com%2fposts%2fexploring-rust-for-data-engineering-part-1%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Exploring Rust For Data Engineering Part 1 on whatsapp" href="https://api.whatsapp.com/send?text=Exploring%20Rust%20For%20Data%20Engineering%20Part%201%20-%20https%3a%2f%2fkurtfehlhauer.com%2fposts%2fexploring-rust-for-data-engineering-part-1%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Exploring Rust For Data Engineering Part 1 on telegram" href="https://telegram.me/share/url?text=Exploring%20Rust%20For%20Data%20Engineering%20Part%201&amp;url=https%3a%2f%2fkurtfehlhauer.com%2fposts%2fexploring-rust-for-data-engineering-part-1%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></div></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://kurtfehlhauer.com/>Kurt Fehlhauer</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
