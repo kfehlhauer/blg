@@ -6,16 +6,16 @@ Summary
 --------
 I specialize in leading large-scale data engineering initiatives and driving enterprise-wide data architecture transformations. My efforts have enabled scalable multi-petabyte platforms that support artificial intelligence applications and data-driven decision-making across global operations. I am passionate about enabling AI usage within the teams I manage to accelerate the delivery of solutions. 
 
-My expertise includes designing and deploying robust data platforms using technologies like Databricks Spark, Kubernetes, and Delta Lake, while advancing cost-efficient solutions such as Rust-based query engines. Committed to fostering innovation, I build global teams that deliver and empower analytics at scale.
+My expertise includes designing and deploying robust data platforms using technologies such as Databricks Spark, Kubernetes, and Delta Lake, while advancing cost-efficient solutions, including Rust-based query engines. Committed to fostering innovation, I build global teams that deliver and empower analytics at scale.
 
-I constantly look to increase my skillset. Currently, I am experimenting with Rust on the Solana blockchain and building WASM-powered sites using Dioxus.
+I continually strive to expand my skill set. Currently, I am experimenting with Rust on the Solana blockchain and building WASM-powered sites using Dioxus.
 
 Experience
 --------------
 2/2022 - Present
 ### Chief Data Architect
 #### Stellantis: Remote
-Spearheaded deparment-wide data architecture transformation at Stellantis, delivering scalable multi-petabyte platforms that enable AI initiatives and data-driven decision making across global operations.
+Spearheaded department-wide data architecture transformation at Stellantis, delivering scalable multi-petabyte platforms that enable AI initiatives and data-driven decision making across global operations.
 
 - Built and led a global data engineering organization spanning multiple continents, establishing DevOps practices that reduced system delivery time by 40%
 - Architected and deployed a multi-petabyte data platform using Databricks Spark, Kubernetes, and Delta Lake, supporting 500+ employees with enterprise-scale analytics
@@ -24,7 +24,7 @@ Spearheaded deparment-wide data architecture transformation at Stellantis, deliv
 - Designed and implemented petabyte-scale vehicle data collection architecture for both research and production fleets, enabling real-time analytics and predictive maintenance
 - Led cross-functional collaboration with AI teams to productionize large language models (LLMs), accelerating time-to-market for AI-powered features
 - Established comprehensive data governance framework and PII handling protocols, ensuring regulatory compliance across multiple regions
-- Forecast yearly multimillion-dollar data platform budge
+- Forecast yearly multimillion-dollar data platform budget
 - Currently serving as Acting Head of Data Governance (March 2025), focusing on data discovery, AI enablement, and data democratization initiatives
 - Developed portable cloud-agnostic architectures, ensuring business continuity in regions with limited cloud vendor availability
 _____
@@ -124,7 +124,7 @@ Led enterprise architecture at Fortune 500 energy company, pioneering real-time 
 - Directly contributed technical innovations that earned Calpine a 5th place ranking in InformationWeek Top 100 Innovators (2005), positioning the company as an energy sector technology pioneer
 - Managed project budgets up to $600K and established PMO standards for timeline management, delivering 95% of projects on time and under budget across the IT portfolio
 - Architected a comprehensive business intelligence platform using ASP.NET, SQL Server, and SSAS, enabling real-time analysis of natural gas and electric power sales data
-- Built enterprise data warehouse integrating Maximo inventory systems using SQL Server, C#, and DTS, automating critical operational reporting and reducing manual processes by 80%
+- Built an enterprise data warehouse integrating Maximo inventory systems using SQL Server, C#, and DTS, automating critical operational reporting and reducing manual processes by 80%
 - Developed custom data mapping platform using C#, ADO.NET, Oracle, and OSI PI, standardizing data integration across heterogeneous industrial control systems
 - Enhanced custom OLAP caching server, optimizing performance for complex energy market calculations (gas days, peaking periods, off-peak analysis) with sub-second response times
 - Enhanced legacy C++/MFC libraries to support dynamic contract period management, improving operational flexibility for diverse power purchase agreements
