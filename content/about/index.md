@@ -4,7 +4,11 @@ email: kfehlhauer@pm.me
 
 Summary
 --------
-A hands-on engineering leader with a proven track record of creating teams that transform visions into systems.  
+I specialize in leading large-scale data engineering initiatives and driving enterprise-wide data architecture transformations. My efforts have enabled scalable multi-petabyte platforms that support artificial intelligence applications and data-driven decision-making across global operations. I am passionate about enabling AI usage within the teams I manage to accelerate the delivery of solutions. 
+
+My expertise includes designing and deploying robust data platforms using technologies like Databricks Spark, Kubernetes, and Delta Lake, while advancing cost-efficient solutions such as Rust-based query engines. Committed to fostering innovation, I build global teams that deliver and empower analytics at scale.
+
+I constantly look to increase my skillset. Currently, I am experimenting with Rust on the Solana blockchain and building WASM-powered sites using Dioxus.
 
 Experience
 --------------
