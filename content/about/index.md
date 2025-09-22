@@ -8,7 +8,7 @@ I specialize in leading large-scale data engineering initiatives and driving ent
 
 My expertise includes designing and deploying robust data platforms using technologies such as Databricks Spark, Kubernetes, and Delta Lake, while advancing cost-efficient solutions, including Rust-based query engines. Committed to fostering innovation, I build global teams that deliver and empower analytics at scale.
 
-I continually strive to expand my skill set. Currently, I am experimenting with Rust on the Solana blockchain and building WASM-powered sites using Dioxus.
+I continually strive to expand my skill set. Currently, I am experimenting with Rust on the Solana blockchain and building progressive web applications(PWA) sites using Dioxus.
 
 Experience
 --------------
