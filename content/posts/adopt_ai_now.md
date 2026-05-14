@@ -46,9 +46,7 @@ What I'm actually claiming
 
 I don't know what the labor market looks like in five years. Neither does anyone telling you they do. The honest answer is that the people who claim to know are selling something. Usually a book, a course, or a regulatory framework that benefits their incumbent position.
 
-What I know is narrower and harder to dismiss.
-
-In my own work, I am visibly faster than I was eighteen months ago. I prototype faster because Rust + Opus together produce compilable first drafts of services I'd otherwise spend a day scaffolding. The gap between me and the version of me from two years ago is large enough that I can feel it when I switch contexts to a tool that doesn't have AI assistance.
+What I know is narrower and harder to dismiss. In my own work, I am visibly faster than I was eighteen months ago. I prototype faster because Rust + Opus together produce compilable first drafts of services I'd otherwise spend a day scaffolding. The gap between me and the version of me from two years ago is large enough that I can feel it when I switch contexts to a tool that doesn't have AI assistance.
 
 The colleague who can compress a six-week audit into a weekend is harder to lay off than the colleague who can't. That is the entire claim. Not "augmented or unemployed." Not "you have been warned." Just: there is a widening gap between the two versions of the same role, and the gap is currently bridgeable for the price of a $20/month subscription and a few weekends of attention.
 
