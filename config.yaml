@@ -1,4 +1,5 @@
-baseurl: localhost
+baseurl: https://kurtfehlhauer.com/
+# baseurl: localhost
 title: Kurt Fehlhauer
 languageCode: en-us
 pagination:
