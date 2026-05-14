@@ -1,5 +1,5 @@
 ---
-title: "Adopt AI to Augment Your Capabilities"
+title: "Booing AI Will Not Save You, Action Will"
 date: 2026-05-14T14:56:36-04:00
 draft: false
 ---
