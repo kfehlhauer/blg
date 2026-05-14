@@ -4,23 +4,31 @@ email: kfehlhauer@pm.me
 
 Summary
 --------
-I specialize in leading large-scale data engineering initiatives and driving enterprise-wide data architecture transformations. My efforts have enabled scalable multi-petabyte platforms that support artificial intelligence applications and data-driven decision-making across global operations. I am passionate about enabling AI usage within the teams I manage to accelerate the delivery of solutions. 
+Twenty years building data infrastructure at Fortune 50 scale. Founded the data architecture function at Stellantis's AI division ($60M platform, production agentic AI) and modernized the analytics backbone for Call of Duty at Activision. Hands-on with Rust, Spark, and Databricks; equally comfortable writing production code and presenting to executive leadership.
 
-My expertise includes designing and deploying robust data platforms using technologies such as Databricks Spark, Kubernetes, and Delta Lake, while advancing cost-efficient solutions, including Rust-based query engines. Committed to fostering innovation, I build global teams that deliver and empower analytics at scale.
-
-I continually strive to expand my skill set. Currently, I am experimenting with Rust on the Solana blockchain and building progressive web applications(PWA) sites using Dioxus.
 
 Experience
 --------------
 2/2022 - Present
 ### Chief Data Architect
 #### Stellantis: Remote
-Led department-wide data architecture at Stellantis, creating scalable multi-petabyte platforms that empower AI initiatives and data-informed decisions across global operations.
+Founded the enterprise data architecture function at a Fortune 50 automaker. Built the team from zero to 20+ engineers across 3 business units in North America and EMEA; team now requires three engineering managers. Current focus: AI platform architecture and division-wide technical standards with dotted-line oversight of 5 senior engineers.
 
--	Acting Head of Data Governance (since March 2025), focusing on data discovery, AI enablement, and data democratization initiatives
--	Established a comprehensive data governance framework and PII protocols, ensuring regulatory compliance across multiple regions
--	Designed and launched a multi-petabyte data platform with Databricks Spark, Kubernetes, and Delta Lake, enabling 500+ employees to access enterprise-scale analytics
--	Implemented Rust-based query engines (DataFusion, delta-rs), reducing query costs by 80% for time series data quality.
+##### Platform Architecture & Build
+- Architected and launched a multi-petabyte data platform on Databricks, Kubernetes, and Delta Lake, processing 500TB/day of vehicle telemetry; platform now serves 500+ analysts, data scientists, and engineers
+- Secured $60M annual budget through Stellantis corporate governance to fund the buildout of connected services data infrastructure 
+- Scaled the function to require three engineering managers — one for DevOps/platform and two for data engineering — across hiring, mentorship, and organizational design
+- Built a Rust-based time-series data quality monitoring system on DataFusion and delta-rs that runs on a single Docker container, replacing a Spark/Databricks cluster-based implementation; cut monitoring infrastructure costs 80%+ by eliminating cluster overhead while maintaining throughput on multi-petabyte Delta Lake tables 
+
+##### AI Platform & Architecture Leadership
+- Designed and shipped a production agentic AI system that autonomously maps the architecture of 1,000+ data and analytics applications using a hybrid local/cloud LLM pipeline (Rig framework, Claude Opus, Qwen models); compressed a 3-month manual discovery process to 7 hours, saving an estimated 10 engineer-months and $250K in modernization planning 
+- Set divisional data architecture direction across three engineering teams through dotted-line oversight, technical review authority, and platform standards ownership 
+
+##### Acting Head of Data Governance (March 2025 – January 2026) 
+- Stepped into divisional leadership role during executive transition, managing 5 direct reports and 8 total staff across data discovery, AI enablement, and democratization initiatives while maintaining architecture responsibilities 
+- Authored the Stellantis enterprise Data and AI tenets, adopted company-wide 
+- Established enterprise data governance framework and PII protocols spanning GDPR, CCPA, and other regional regulations, unblocking AI initiatives previously stalled by compliance review 
+- Built data discovery and cataloging system over untyped vehicle signal data using Rust, DataFusion, and DuckDB
 _____
 
 
@@ -38,10 +46,18 @@ _____
 6/2014 – 4/2019
 ### Lead Database Architect
 #### Activision Publishing: Boulder, CO/Remote
-Established a foundational analytics infrastructure that supported a billion-dollar gaming franchise.
--	Architected and managed a comprehensive big data platform for the Call of Duty franchise, processing petabytes of player telemetry and game performance data supporting 300M+ registered users
--	Led company-wide adoption of Apache Spark and Airflow, establishing Activision as an early adopter of modern big data technologies and decreasing processing times by 60%
--	Initiated platform consolidation, migrating from fragmented Qubole/Hive/Presto/Redshift platforms to a unified Databricks Delta Lake architecture, reducing operational complexity by 80%
+Promoted from Lead Database Architect to Senior Manager across 7+ years modernizing the data infrastructure powering Call of Duty and studio analytics. Drove the migration from fragmented legacy systems (Qubole, Hive, Presto, Redshift) to a unified Databricks/Delta Lake platform; championed company-wide adoption of Spark and Airflow.
+
+##### Senior Manager, ETL – Demonware (May 2019 – February 2022)
+- Managed a team of 5 data engineers supporting Call of Duty franchise analytics and studio operations across 5 global studios
+- Consolidated a fragmented stack (Qubole, Hive, Presto, Redshift) onto a unified Databricks platform, cutting platform team operational overhead by 80 hours/week
+- Standardized workflow orchestration on Astronomer Airflow, reducing average pipeline deployment time from 1 day to 3 hours across 35 production DAGs
+- Engineered a high-throughput third-party data ingestion framework in Scala using Cats/ZIO, Circe, and http4s on Kubernetes, processing millions of events/day from multiple game titles
+
+##### Lead Database Architect – Analytical Services (June 2014 – April 2019)
+- Architected the big data platform supporting Call of Duty's hundreds of millions of registered users, processing petabytes of player telemetry and game performance data
+- Drove company-wide adoption of Apache Spark and Airflow, positioning Activision among the early enterprise adopters; reduced batch processing windows by more than 50% over MapReduce jobs
+- Initiated the Databricks/Delta Lake migration that completed under the successor role, retiring multiple legacy systems and reducing infrastructure spend by $2.3M annually
 _____
 
 

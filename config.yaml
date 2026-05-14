@@ -1,10 +1,8 @@
-baseurl: https://kurtfehlhauer.com/
-#baseurl: localhost
+baseurl: localhost
 title: Kurt Fehlhauer
 languageCode: en-us
 pagination:
-  pageSize: 10 # Number of posts per page
-# Default Theme
+  pageSize: 10
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -16,14 +14,6 @@ menu:
       name: About
       url: /about/
       weight: 40
-    # - identifier: data_engineering
-    #   name: Data Engineering
-    #   url: /dataengineering/
-    #   weight: 10
-    # - identifier: fishing
-    #   name: Fishing
-    #   url: /fishing/
-    #   weight: 20
     - identifier: photography
       name: Photography
       url: /photography/
@@ -31,18 +21,11 @@ menu:
     - name: posts
       url: posts/
       weight: 30
-    # - name: Search
-    #   url: search/
-    #   weight: 20
-    
 
 params:
-    # homeInfoParams:
-    #     Title: Kurt Fehlhauer
-    #     Content: Software Engineering, Photography, etc.
     profileMode:
       enabled: true
-      title: "Kurt Fehlhauer" 
+      title: "Kurt Fehlhauer"
       subtitle: "Software Engineering, Photography, etc."
       buttons:
             - name: Photography
@@ -60,15 +43,11 @@ params:
     defaultTheme: dark
     disableThemeToggle: true
     ShowShareButtons: true
-    # ShowReadingTime: true
-    # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
-    #ShowToc: true
-
 
 outputs:
     home:
