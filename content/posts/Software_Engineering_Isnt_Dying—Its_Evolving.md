@@ -1,7 +1,7 @@
 ---
 title: "Software Engineering Isn't Dying—It's Evolving"
 date: 2026-05-20T16:16:10-04:00
-draft: true
+draft: false  
 ---
 
 AI is enabling software engineers to move up the value chain. This realization should be more obvious than it is. The AI era feels different from prior technology-driven disruptions because it is fundamentally different. This is not analogous to the shift from horse-drawn carriages to automobiles. While there were undoubtedly those who took pride in crafting carriages—and the Luddites of England who resisted the mechanized loom that produced more in a day than a worker could in a week—this transformation is distinct because it affects everyone, directly or indirectly. It is unsettling to the broader public as they read about once-elite, untouchable software engineers facing their own reckoning, leading many to wonder whether they, too, are at risk. Those really smart people can't get jobs, what about me? That, however, is a matter of perception rather than reality.
