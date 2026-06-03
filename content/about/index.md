@@ -160,7 +160,7 @@ _____
 #### Rockwell Automation Allen – Bradley: Mequon, WI
 Operated mission-critical mainframe systems for Fortune 500 industrial automation leader, contributing to successful ISO 9000 certification initiatives.
 
-- Operated and maintained enterprise mainframe systems processing critical manufacturing data for Rockwell's worldwide industrial automation operations, supporting $2B+ annual revenue
+- Operated and maintained enterprise mainframe systems processing critical manufacturing data for Rockwell's worldwide industrial automation operations
 - Led automation initiative for mainframe application scheduling, designing workflows that increased operational efficiency and reduced after-hours support requirements
 - Supported multiple successful ISO 9000 quality certification audits through meticulous documentation of mainframe operational procedures
 - Collaborated with systems analysts and programmers on troubleshooting complex system issues
