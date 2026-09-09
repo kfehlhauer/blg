@@ -10,7 +10,7 @@ Twenty years building data infrastructure at Fortune 50 scale. Founded the data 
 Experience
 --------------
 2/2022 - Present
-### Chief Data Architect
+### Chief Architect
 #### Stellantis: Remote
 Founded the enterprise data architecture function at a Fortune 50 automaker. Built the team from zero to 20+ engineers across 3 business units in North America and EMEA; team now requires three engineering managers. Current focus: AI platform architecture and division-wide technical standards with dotted-line oversight of 5 senior engineers.
 

@@ -27,7 +27,7 @@ params:
     profileMode:
       enabled: true
       title: "Kurt Fehlhauer"
-      subtitle: "Software Engineering, Photography, etc."
+      subtitle: "AI Engineering, Photography, etc."
       buttons:
             - name: Photography
               url: photography
